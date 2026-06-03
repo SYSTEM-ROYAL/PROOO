@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROYAL MODZ</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #0b0c10;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(111, 66, 193, 0.2);
+            border-radius: 20px;
+            padding: 30px 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(111, 66, 193, 0.2);
+        }
+
+        .profile-wrapper {
+            position: relative;
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 20px auto;
+        }
+
+        .profile-pic {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #6f42c1;
+            box-shadow: 0 0 15px #6f42c1, inset 0 0 15px #6f42c1;
+        }
+
+        .profile-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -5px; left: -5px; right: -5px; bottom: -5px;
+            background: linear-gradient(45deg, #00f2fe, #4facfe, #6f42c1);
+            border-radius: 50%;
+            z-index: -1;
+            opacity: 0.6;
+            filter: blur(10px);
+        }
+
+        .title {
+            font-size: 26px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(0, 242, 254, 0.6), 0 0 20px rgba(111, 66, 193, 0.6);
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .btn-telegram {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #0088cc, #00a2ff);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 14px 24px;
+            border-radius: 50px;
+            border: 2px dashed #ffffff;
+            box-shadow: 0 5px 15px rgba(0, 136, 204, 0.4);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .btn-telegram:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 136, 204, 0.7), 0 0 15px #ffffff;
+        }
+
+        .btn-telegram svg {
+            width: 24px;
+            height: 24px;
+            fill: #ffffff;
+        }
+
+        .timer-box {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 15px 10px;
+        }
+
+        .timer-display {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .time-segment {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 55px;
+        }
+
+        .time-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00f2fe;
+            text-shadow: 0 0 5px rgba(0, 242, 254, 0.5);
+        }
+
+        .time-label {
+            font-size: 10px;
+            text-transform: uppercase;
+            color: #a0a0a0;
+            margin-top: 4px;
+            letter-spacing: 1px;
+        }
+
+        .separator {
+            font-size: 22px;
+            font-weight: bold;
+            color: #6f42c1;
+            margin-bottom: 18px;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0.3; }
+        }
+
+        .footer-text {
+            font-size: 11px;
+            color: #666;
+            margin-top: 25px;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Built-in Secure Image Code (No External Hosting Needed) -->
+        <div class="profile-wrapper">
+            <img class="profile-pic" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%2300f2fe'/><stop offset='100%' stop-color='%236f42c1'/></linearGradient></defs><rect width='100%' height='100%' fill='%23111'/><circle cx='80' cy='80' r='75' fill='none' stroke='url(%23g)' stroke-width='2'/><text x='50%' y='45%' dominant-baseline='middle' text-anchor='middle' fill='%23fff' font-family='Arial' font-size='50' font-weight='bold'>👻</text><text x='50%' y='75%' dominant-baseline='middle' text-anchor='middle' fill='%2300f2fe' font-family='Arial' font-size='14' font-weight='bold' letter-spacing='1'>ROYAL MODZ</text></svg>" alt="ROYAL MODZ Profile">
+        </div>
+
+        <!-- Title Section -->
+        <div class="title">ROYAL MODZ</div>
+
+        <!-- Telegram Button -->
+        <a href="https://t.me/+PNrn6A73idQwMDI1" target="_blank" class="btn-telegram">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.37.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .24z"/>
+            </svg>
+            <span>Join Free Telegram</span>
+            <svg viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.37.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .24z"/>
+            </svg>
+        </a>
+
+        <!-- Live Reverse Countdown -->
+        <div class="timer-box">
+            <div class="timer-display">
+                <div class="time-segment"><div class="time-number" id="days">00</div><div class="time-label">Days</div></div>
+                <div class="separator">:</div>
+                <div class="time-segment"><div class="time-number" id="hours">00</div><div class="time-label">Hours</div></div>
+                <div class="separator">:</div>
+                <div class="time-segment"><div class="time-number" id="minutes">01</div><div class="time-label">Minutes</div></div>
+                <div class="separator">:</div>
+                <div class="time-segment"><div class="time-number" id="seconds">60</div><div class="time-label">Seconds</div></div>
+            </div>
+        </div>
+
+        <div class="footer-text">Ads managed by AdsEmpireAdvertising</div>
+    </div>
+
+    <script>
+        let totalSeconds = 120; 
+        function updateTimer() {
+            if (totalSeconds <= 0) { totalSeconds = 120; }
+            let displayMins = Math.floor(totalSeconds / 60);
+            let displaySecs = totalSeconds % 60;
+            
+            if (displayMins === 2) {
+                document.getElementById('minutes').innerText = "02";
+                document.getElementById('seconds').innerText = "00";
+            } else {
+                document.getElementById('minutes').innerText = String(displayMins).padStart(2, '0');
+                document.getElementById('seconds').innerText = String(displaySecs).padStart(2, '0');
+            }
+            totalSeconds--;
+        }
+        setInterval(updateTimer, 1000);
+        updateTimer();
+    </script>
+</body>
+</html>
